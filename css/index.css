@@ -521,14 +521,11 @@ address {
     .container {
       width: 100%;
       height: auto;
-      border: 3px solid red;
     }
     
   nav {
       height: auto;
       width: 100%;
-     
-      padding-top: 10%;
       display: flex;
       justify-content: center;
       
@@ -544,16 +541,22 @@ address {
     nav li {
         width: 100%;
       color: black;
+      overflow: hidden;
     }
     
     nav li a {
-      font-size: 16px;
+      font-size: 20px;
       text-decoration: none;
       color: gray;
-      padding: 0% 47%;
-      border: 1px solid black;
+      padding: 0% 45%;
+      border: 1.4px solid lightgray;
       line-height: 50px;
       width: 100%;
+      text-align: center;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      
       
       
     }
@@ -573,7 +576,7 @@ address {
   position: absolute;
   top: 5px;
   right:30%;
-  margin-top: 30px;
+  margin-top: 32px;
     }
     
   
