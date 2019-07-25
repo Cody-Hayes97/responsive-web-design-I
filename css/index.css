@@ -712,17 +712,19 @@ address {
     display: block;
     width: 30%;
     margin-left: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0%;
   }
   
   .copy {
     text-align: center;
-    margin-bottom: 0px;
-    padding: 0px;
+    margin-bottom: 5%;
+    position: absolute;
+    left: 13%;
+    bottom: -1000px;
   }
   
   address {
-      margin-top: 0px;
+      margin-bottom: 0%;
       
   
   }
