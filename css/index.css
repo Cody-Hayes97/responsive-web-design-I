@@ -1,3 +1,905 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+nav {
+  height: 48px;
+  text-align: center;
+  width: 100%;
+  text-align: left;
+  left: 0;
+}
+
+nav ul {
+  display: inline-block;
+  padding-top: 60px;
+}
+
+nav li {
+  display: inline-block;
+  color: black;
+}
+
+nav li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: gray;
+  padding: 20px;
+}
+nav li a:hover {
+  opacity: 0.5;
+}
+
+.logo {
+  margin-bottom: 100px;
+  margin-left: 100%;
+}
+
+.nav {
+  text-align: center;
+  display: inline;
+}
+.top {
+  display: inline-block;
+}
+
+.open {
+  margin-left: 0%;
+  margin-bottom: 70px;
+  display: inline-block;
+  width: 30%;
+  position: relative;
+  font-size: 80px;
+  height: 50%;
+  text-align: center;
+}
+button {
+  background-color: white;
+  font-size: 20px;
+  height: 35px;
+  width: 200px;
+  border-color: black;
+  border-width: 1px;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+.head {
+  display: inline-block;
+  position: absolute;
+  margin-left: 150px;
+  block-size: 200px;
+
+  width: auto;
+  height: auto;
+}
+
+.sectionHead {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid rgb(0, 0, 0);
+  margin: 1em 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 25px;
+}
+.features {
+  margin: 20px;
+  display: inline-block;
+  width: 45%;
+  left: 35%;
+  margin-left: 35px;
+}
+.about {
+  display: inline-block;
+  width: 45%;
+  left: 35%;
+}
+.first-pars {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.middle-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.services {
+  margin: 20px;
+  display: inline-block;
+  width: 25%;
+  left: 35%;
+  margin-bottom: 50px;
+  margin-left: 35px;
+}
+
+.product {
+  margin: 20px;
+  display: inline-block;
+  width: 25%;
+  margin-bottom: 50px;
+}
+
+.vision {
+  margin: 20px;
+  display: inline-block;
+  width: 25%;
+  margin-bottom: 50px;
+}
+
+.add {
+  display: block;
+  width: 20%;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.num {
+  display: block;
+  width: 20%;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.mail {
+  display: block;
+  width: 20%;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.copy {
+  text-align: center;
+  margin: 100px;
+  padding: 50px;
+}
+
+address {
+  margin-top: 50px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+
+  nav {
+    height: auto;
+    width: 100%;
+
+    padding-top: 6%;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav li {
+    color: black;
+  }
+
+  nav li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: gray;
+    padding: 0px 40px;
+  }
+  nav li a:hover {
+    opacity: 0.5;
+  }
+  .nav {
+    text-align: center;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    position: absolute;
+    top: 5px;
+    right: 37%;
+    margin-top: 30px;
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 32.5%;
+    font-size: 75px;
+    text-align: justify-all;
+    line-height: 90%;
+    margin-top: 10%;
+  }
+  button {
+    background-color: white;
+    font-size: 16px;
+    height: 32px;
+    width: 160px;
+    border-color: black;
+    border-width: 1px;
+    cursor: pointer;
+    margin-left: 18%;
+    margin-top: 13px;
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
+
+  .head {
+    display: none;
+  }
+
+  .sectionHead {
+    width: 100%;
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    width: 95%;
+    border: 0;
+    border-top: 2px solid rgb(0, 0, 0);
+    margin-left: 3%;
+    padding: 0;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+  .features {
+    margin: 20px;
+    display: inline-block;
+    width: 45%;
+    left: 30%;
+    margin-left: 30px;
+  }
+  .about {
+    display: inline-block;
+    width: 45%;
+    left: 30%;
+  }
+  .first-pars {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  .middle-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .services {
+    margin: 20px;
+    display: inline-block;
+    width: 25%;
+    left: 35%;
+    margin-bottom: 20px;
+    margin-left: 35px;
+  }
+
+  .product {
+    margin: 20px;
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 20px;
+  }
+
+  .vision {
+    margin: 20px;
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 20px;
+  }
+
+  .add {
+    display: block;
+    width: 20%;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+
+  .num {
+    display: block;
+    width: 20%;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+
+  .mail {
+    display: block;
+    width: 20%;
+    margin-left: 30px;
+    margin-bottom: 0px;
+  }
+
+  .copy {
+    text-align: center;
+    margin-bottom: 1px;
+    padding: 0px;
+  }
+
+  address {
+    margin-top: 0px;
+  }
+
+  @media (max-width: 500px) {
+    .container {
+      width: 100%;
+      height: auto;
+    }
+
+    nav {
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+
+    nav li {
+      width: 100%;
+      color: black;
+      overflow: hidden;
+    }
+
+    nav li a {
+      font-size: 20px;
+      text-decoration: none;
+      color: gray;
+      padding: 0% 45%;
+      border: 1.4px solid lightgray;
+      line-height: 50px;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    nav li a:hover {
+      opacity: 0.5;
+    }
+    .nav {
+      text-align: center;
+    }
+    .top {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo {
+      position: absolute;
+      top: 5px;
+      right: 30%;
+      margin-top: 32px;
+    }
+
+    .open {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin-left: 20%;
+      font-size: 75px;
+      text-align: justify-all;
+      line-height: 90%;
+      margin-top: 10%;
+    }
+    button {
+      background-color: white;
+      font-size: 16px;
+      height: 32px;
+      width: 160px;
+      border-color: black;
+      border-width: 1px;
+      cursor: pointer;
+      margin-left: 18%;
+      margin-top: 13px;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    .head {
+      display: none;
+    }
+
+    .sectionHead {
+      width: 100%;
+    }
+
+    hr {
+      display: block;
+      height: 1px;
+      width: 95%;
+      border: 0;
+      border-top: 2px solid rgb(0, 0, 0);
+      margin-left: 1%;
+      padding: 0;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 17px;
+    }
+    .features {
+      margin: 20px;
+      display: inline-block;
+      width: 85%;
+      left: 30%;
+      margin-left: 10px;
+      margin-bottom: 10%;
+    }
+    .about {
+      display: inline-block;
+      width: 85%;
+      left: 30%;
+      margin-left: 10px;
+      margin-bottom: 10%;
+    }
+    .first-pars {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+      align-content: space-between;
+    }
+
+    .middle-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 96%;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .services {
+      margin: 20px;
+      display: inline-block;
+      width: 85%;
+      left: 35%;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+
+    .product {
+      margin: 20px;
+      display: inline-block;
+      width: 85%;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+
+    .vision {
+      margin: 20px;
+      display: inline-block;
+      width: 85%;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+
+    .second-pars {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .add {
+      display: block;
+      width: 33%;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .num {
+      display: block;
+      width: 30%;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .mail {
+      display: block;
+      width: 30%;
+      margin-left: 10px;
+      margin-bottom: 0%;
+    }
+
+    .copy {
+      text-align: center;
+      margin-bottom: 5%;
+    }
+
+    address {
+      margin-bottom: 0%;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .container {
+      width: 100%;
+      height: auto;
+    }
+
+    nav {
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+
+    nav li {
+      width: 100%;
+      color: black;
+      overflow: hidden;
+    }
+
+    nav li a {
+      font-size: 20px;
+      text-decoration: none;
+      color: gray;
+      padding: 0% 45%;
+      border: 1.4px solid lightgray;
+      line-height: 50px;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    nav li a:hover {
+      opacity: 0.5;
+    }
+    .nav {
+      text-align: center;
+    }
+    .top {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo {
+      position: absolute;
+      top: 5px;
+      right: 18%;
+      margin-top: 32px;
+    }
+
+    .open {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin-left: 15%;
+      font-size: 60px;
+      text-align: justify-all;
+      line-height: 90%;
+      margin-top: 10%;
+    }
+    button {
+      background-color: white;
+      font-size: 16px;
+      height: 32px;
+      width: 160px;
+      border-color: black;
+      border-width: 1px;
+      cursor: pointer;
+      margin-left: 15%;
+      margin-top: 13px;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    .head {
+      display: none;
+    }
+
+    .sectionHead {
+      width: 100%;
+    }
+
+    hr {
+      display: block;
+      height: 1px;
+      width: 95%;
+      border: 0;
+      border-top: 2px solid rgb(0, 0, 0);
+      margin-left: 3%;
+      padding: 0;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 17px;
+    }
+    .features {
+      margin: 20px;
+      display: inline-block;
+      width: 85%;
+      left: 30%;
+      margin-left: 10px;
+      margin-bottom: 10%;
+    }
+    .about {
+      display: inline-block;
+      width: 85%;
+      left: 30%;
+      margin-left: 10px;
+      margin-bottom: 10%;
+    }
+    .first-pars {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+      align-content: space-between;
+    }
+
+    .middle-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 95%;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .services {
+      margin: 20px;
+      display: inline-block;
+      width: 85%;
+      left: 35%;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+
+    .product {
+      margin: 20px;
+      display: inline-block;
+      width: 85%;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+
+    .vision {
+      margin: 20px;
+      display: inline-block;
+      width: 85%;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+
+    .second-pars {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .add {
+      display: block;
+      width: 50%;
+      margin-left: 10px;
+      margin-bottom: 5px;
+    }
+
+    .num {
+      display: block;
+      width: 50%;
+      margin-left: 10px;
+      margin-bottom: 5px;
+    }
+
+    .mail {
+      display: block;
+      width: 50%;
+      margin-left: 10px;
+      margin-bottom: 0px;
+    }
+
+    .copy {
+      text-align: center;
+      margin-bottom: 1px;
+      padding: 0px;
+    }
+
+    address {
+      margin-top: 0px;
+    }
+  }
+}
